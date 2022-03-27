@@ -1,0 +1,56 @@
+textarea, input[type="text"], input[type="button"], input[type="submit"] {-webkit-appearance: none; border-radius: 0;}
+
+body {	text-align: center;}
+
+.sound {
+    margin: 4px 2px;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    padding: 16px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#game {
+    margin: 60px;
+}
+
+.sound_main {
+    width: 180px;
+}
+
+.sound_alternative {
+    width: 60px;
+}
+
+.title {
+    height: 30px;
+    font-size: 20px;
+}
+
+.spelling {
+    margin: 4px 2px;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    color: white;
+    width: 154px;
+    height: 60px;
+    padding: 16px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.command {
+    margin: 4px 2px;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    color: white;
+    width: 316px;
+    height: 60px;
+    padding: 16px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
