@@ -65,13 +65,19 @@ function command_01_onclick(e){
 }
 
 document.addEventListener('keydown', (event) => {
-    var name = event.key;
-    var code = event.code;
-    // Alert the key name and key code on keydown
-    //alert(`Key pressed ${name} \r\n Key code value: ${code}`);
     if (event.code === "KeyA") play_sound(sound_main)
     if (event.code === "KeyS") play_sound(sound_alternative)
     if (event.code === "ArrowLeft") document.querySelector("#spelling_01").click()
     if (event.code === "ArrowRight") document.querySelector("#spelling_02").click()
     if (event.code === "ArrowDown") document.querySelector("#command_01").click()
-  }, false);
+}, false);
+
+document.addEventListener('click', event => {
+    if (event.target.classList.contains("option")) {
+        if (event.target.value === "a") all_words = a_words
+        if (event.target.value === "i") all_words = i_words
+        document.querySelector("#intro").style.display = "none"
+        document.querySelector("#game").style.display = "block"
+        document.querySelector("#command_01").click()
+    }
+}, false);

@@ -2,6 +2,11 @@ textarea, input[type="text"], input[type="button"], input[type="submit"] {-webki
 
 body {	text-align: center;}
 
+
+input:hover {
+    background-color: rgb(60, 60, 60);
+}
+
 .sound {
     margin: 4px 2px;
     background-color: rgb(100, 100, 100);
@@ -16,6 +21,7 @@ body {	text-align: center;}
 
 #game {
     margin: 60px;
+    display: none;
 }
 
 .sound_main {
@@ -24,6 +30,12 @@ body {	text-align: center;}
 
 .sound_alternative {
     width: 60px;
+}
+
+.titleOptions {
+    margin: 76px 0 0 0;
+    height: 30px;
+    font-size: 20px;
 }
 
 .title {
@@ -53,4 +65,20 @@ body {	text-align: center;}
     padding: 16px 16px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.option {
+    margin: 4px 2px;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    color: white;
+    width: 316px;
+    height: 60px;
+    padding: 16px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: rgb(60, 60, 60);
 }
